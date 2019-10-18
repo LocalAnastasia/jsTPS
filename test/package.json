@@ -1,0 +1,25 @@
+{
+  "name": "jstps_tester",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LocalAnastasia/jsTPS.git"
+  },
+  "author": "Local Anastasia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LocalAnastasia/jsTPS/issues"
+  },
+  "homepage": "https://github.com/LocalAnastasia/jsTPS#readme"
+}

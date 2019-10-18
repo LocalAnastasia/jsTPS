@@ -1,5 +1,3 @@
-import jsTPS_Transaction from './jsTPSTransaction.js'
-
 class jsTPS {
     
     constructor() {
@@ -39,11 +37,11 @@ class jsTPS {
     doTransaction() {
         if (this.hasTransactionToRedo()) {
             this.performingDo = true;
-            var transaction = this.transactions[mostRecentTransaction + 1];
+            var transaction = this.transactions[this.mostRecentTransaction + 1];
             transaction.doTransaction();
             this.mostRecentTransaction++;
             this.performingDo = false;
-        }      
+        }  
     }
 
     // Get first transaction to be undone
@@ -78,7 +76,7 @@ class jsTPS {
             transaction.undoTransaction();
             this.mostRecentTransaction--;
             this.performingUndo = false;
-        }    
+        }
     }
 
     // Reset stack and pointer
@@ -121,3 +119,5 @@ class jsTPS {
         return text;
     }
 }
+
+export default jsTPS;
